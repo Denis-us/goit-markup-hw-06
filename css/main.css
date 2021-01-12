@@ -428,38 +428,119 @@ nav {
 
 .form {
     position: absolute;
-    width: 600px;
     top:0;
     left:0;
+    width: 528px;
+    height: 581px;
     outline: 1px solid red;
     margin-left: auto;
     margin-right: auto;
-    padding:20px;
+    padding:40px;
 }
 
 .form-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
     font-size: 20px;
     line-height: 23px;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: #212121;
 }
 
 .form-field {
-    position:relative;
+    position: relative;
     display:flex;
+    justify-content: center;
+    
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 100%;
     margin-bottom: 28px;
 }
 
+.form-text {
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    top:50%;
+    left:15px;
+
+    width: 10px;
+    height: 10px;
+
+    display: inline-block;
+    background-color: red;
+
+    transform: translateY(-50%)
+}
+
 .form-field label {
-    margin-bottom: 4px;
+    font-family: Roboto;
+    font-style: normal;
     line-height: 14px;
+    font-size: 12px;
+
+    margin-right: auto;
+    margin-bottom: 4px;
+    
+    color: #757575;
+}
+
+.form-field input,
+.form-field textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .form-field input {
     margin: 0;
     height: 40px;
     width: 100%;
+}
+
+
+.form-field textarea {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+    opacity: 0.5;
+
+    padding: 12px 14px 12px 14px;
+}
+
+/* .form-field textarea:placeholder-shown {
+    background-color: ;
+} */
+
+.form-field button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .icon-modal {
