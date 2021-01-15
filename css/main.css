@@ -117,6 +117,7 @@ nav {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current-color.link,
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -139,6 +140,7 @@ nav {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current-color.link::after,
 .link:hover::after {
     transform: scaleX(1);
 }
@@ -420,6 +422,8 @@ nav {
     width: 528px;
     height: 581px;
 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     background-color: #FFFFFF;
     transform: translate(-50%, -50%) scale(1);
 
@@ -432,7 +436,6 @@ nav {
     left:0;
     width: 528px;
     height: 581px;
-    outline: 1px solid red;
     margin-left: auto;
     margin-right: auto;
     padding:40px;
@@ -458,19 +461,6 @@ nav {
 
     width: 100%;
     margin-bottom: 28px;
-}
-
-.modal-icon {
-    position: absolute;
-    top:50%;
-    left:15px;
-
-    /* fill:currentColor;
-    color: #212121; */
-    display: inline-block;
-    /* background-color: red; */
-
-    transform: translateY(-50%)
 }
 
 .form-label {
@@ -502,6 +492,19 @@ nav {
     margin-bottom: 10px;
 }
 
+.form-input {
+    padding-left: 42px;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid #2196F3;
+}
+
+/* .icon-input {
+
+} */
+
 .form-label textarea {
     font-family: Roboto;
     font-style: normal;
@@ -522,7 +525,7 @@ nav {
     padding: 12px 14px 12px 14px;
 }
 
-::placeholder {
+.form-label textarea::placeholder {
     opacity: 0.5;
 }
 
