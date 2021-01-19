@@ -1093,6 +1093,8 @@ footer {
     margin-right: 12px;
     padding-left: 16px;
 
+    color: #FFFFFF;
+
     background-color: var(--third-bg-color);
 
     outline: none;
